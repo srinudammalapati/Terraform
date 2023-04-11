@@ -76,7 +76,7 @@ resource "azurerm_network_interface" "nic"{
 }
 
 resource "azurerm_network_interface_security_group_association" "nic_nsgassociation" {
-  network_interface_id      = azurerm_network_interface.my_nic.id
+  network_interface_id      = azurerm_network_interface.nic.id
   network_security_group_id = azurerm_network_security_group.nsg.id
 
   depends_on = [
