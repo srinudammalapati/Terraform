@@ -1,5 +1,5 @@
 resource_details = {
-  location = "eastus"
+  location = "eastus2"
   name = "ntire"
 }
 
