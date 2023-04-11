@@ -4,13 +4,13 @@ pipeline{
         stage('scm') {
             steps{
                 git url: 'https://github.com/srinudammalapati/Terraform.git',
-                branch: 'dev 
+                branch: 'dev' 
             }
         }
         stage('terraform') {
             steps{
               sh 'terraform init'
-              sh 'terraform apply -var-file="dev.tfvars" -auto-approve  
+              sh 'terraform apply -var-file="dev.tfvars" -auto-approve' 
             }
         }
     }
