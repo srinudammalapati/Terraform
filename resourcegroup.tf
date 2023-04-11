@@ -58,7 +58,7 @@ resource "azurerm_network_security_group" "nsg" {
     azurerm_resource_group.my_resg
   ]
 }
-resource "azurerm_network_interface" "my_nic" {
+resource "azurerm_network_interface" "nic"{
   name                = "nicfromtf"
   location = var.resource_details.location
    resource_group_name = var.resource_details.name
@@ -80,7 +80,7 @@ resource "azurerm_network_interface_security_group_association" "nic_nsgassociat
   network_security_group_id = azurerm_network_security_group.nsg.id
 
   depends_on = [
-    azurerm_network_interface.my_nic,
+    azurerm_network_interface.nic,
     azurerm_network_security_group.nsg
   ]
 }
