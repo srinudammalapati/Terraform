@@ -84,12 +84,12 @@ resource "azurerm_network_interface_security_group_association" "nic_nsgassociat
     azurerm_network_security_group.nsg
   ]
 }
-resource "azurerm_linux_virtual_machine" "vmfrom_tf"{
+resource "azurerm_linux_virtual_machine" "vmfrom_tf" {
   name                  = "webfromtf"
-  location = var.resource_details.location
-  resource_group_name = var.resource_details.name
+  location              = var.resource_details.location
+  resource_group_name   = var.resource_details.name
   network_interface_ids = [azurerm_network_interface.nic.id]
-  size                  = "Standard_B1s"
+  size                  = "Standard_B2s"
 
   os_disk {
     name                 = "myOsDisk"
