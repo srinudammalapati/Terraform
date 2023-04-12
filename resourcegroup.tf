@@ -84,7 +84,7 @@ resource "azurerm_network_interface_security_group_association" "nic_nsgassociat
     azurerm_network_security_group.nsg
   ]
 }
-resource "azurerm_linux_virtual_machine" "vmfrom_tf" {
+resource "azurerm_linux_virtual_machine" "vmfromtf" {
   name                  = "webfromtf"
   location              = var.resource_details.location
   resource_group_name   = var.resource_details.name
