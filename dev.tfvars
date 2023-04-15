@@ -1,14 +1,15 @@
 resource_details = {
-  location = "eastus2"
-  name = "ntire"
+  location = "eastus"
+  name = "nitre"
 }
 
-network_details = {
-  address_space = [ "192.168.0.0/16" ]
-  name = "ntire"
+kubernates_details = {
+  dns_prefix = "devopsaks1"
+  name = "qt-aks1"
 }
 
-subnets_details = {
-  address_prefixes = [ "192.168.0.0/24", "192.168.1.0/24", "192.168.2.0/24", "192.168.3.0/24" ]
-  name = [ "web", "app", "db", "srinu" ]
+node_pool_details = {
+  name = "default"
+  node_count = 1
+  vm_size = "Standard_B2ms"
 }
