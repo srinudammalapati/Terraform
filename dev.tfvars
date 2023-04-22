@@ -5,7 +5,7 @@ resource_details = {
 
 kubernates_details = {
   dns_prefix = "devopsaks1"
-  name = "qt-aks1"
+  name = "aks1"
 }
 
 node_pool_details = {
