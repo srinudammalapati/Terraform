@@ -1,6 +1,6 @@
 resource_details = {
   location = "centralindia"
-  name = "nitre"
+  name = "tawaa"
 }
 
 kubernates_details = {
