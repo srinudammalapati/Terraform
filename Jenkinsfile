@@ -1,10 +1,10 @@
 pipeline{
-    agent {label 'TERRAFORM'}
+    agent {label 'AKS'}
     stages {
         stage('scm') {
             steps{
                 git url: 'https://github.com/srinudammalapati/Terraform.git',
-                branch: 'dev' 
+                branch: 'qa' 
             }
         }
         stage('terraform') {
