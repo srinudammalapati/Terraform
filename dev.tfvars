@@ -1,5 +1,5 @@
 resource_details = {
-  location = "eastus"
+  location = "centralindia"
   name = "nitre"
 }
 
